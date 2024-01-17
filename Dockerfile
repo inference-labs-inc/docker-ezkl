@@ -19,7 +19,8 @@ RUN pip install \
     'hummingbird-ml' \
     'sk2torch' \
     'web3' \
-    'py-solc-x'
+    'py-solc-x' \
+    'pytest'
 
 RUN git clone https://github.com/zkonduit/ezkl.git && \
     mv ezkl/examples/notebooks/* /home/jovyan/work && \

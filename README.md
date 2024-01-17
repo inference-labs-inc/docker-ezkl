@@ -53,6 +53,7 @@ These packages are preinstalled in the container along with packages from the [j
 | `sk2torch` | [GitHub](https://github.com/InferenceLabs/sk2torch) |
 | `web3` | [GitHub](https://github.com/ethereum/web3.py) |
 | `py-solc-x` | [GitHub](https://github.com/iamdefinitelyahuman/py-solc-x) |
+| `pytest` | [GitHub](https://github.com/pytest-dev/pytest) |
 
 [`EZKL`]: https://github.com/zkonduit/ezkl "EZKL"
 [jupyter/pytorch-notebook]: https://github.com/jupyter/docker-stacks/tree/main/images/pytorch-notebook "PyTorch Notebook"
