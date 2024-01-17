@@ -31,7 +31,8 @@ RUN curl https://sh.rustup.rs -sSf | bash -s -- -y
 RUN echo 'source $HOME/.cargo/env' >> $HOME/.bashrc
 RUN curl https://hub.ezkl.xyz/install_ezkl_cli.sh | bash
 RUN curl -L https://foundry.paradigm.xyz | bash && /home/jovyan/.foundry/bin/foundryup
-RUN alias anvil=/home/jovyan/.foundry/bin/anvil
+ENV PATH="/home/jovyan/.foundry/bin:$PATH"
+
 USER root
 RUN apt-get update && apt-get install -y software-properties-common
 RUN add-apt-repository ppa:ethereum/ethereum -y
