@@ -22,7 +22,7 @@ jobs:
         id: meta
         uses: docker/metadata-action@v5.5.0
         with:
-          images: inferencelabs/ezkl
+          images: inferencelabs/ezkl-notebook
 
       - name: Build and push Docker image
         uses: docker/build-push-action@v5.1.0
