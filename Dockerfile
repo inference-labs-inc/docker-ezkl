@@ -20,7 +20,8 @@ RUN pip install \
     'sk2torch' \
     'web3' \
     'py-solc-x' \
-    'pytest'
+    'pytest' \
+    'lightgbm'
 
 RUN git clone https://github.com/zkonduit/ezkl.git && \
     mv ezkl/examples/notebooks/* /home/jovyan/work && \
@@ -29,7 +30,7 @@ RUN git clone https://github.com/zkonduit/ezkl.git && \
 RUN curl https://sh.rustup.rs -sSf | bash -s -- -y
 
 RUN echo 'source $HOME/.cargo/env' >> $HOME/.bashrc
-RUN curl https://hub.ezkl.xyz/install_ezkl_cli.sh | bash
+RUN curl https://raw.githubusercontent.com/zkonduit/ezkl/main/install_ezkl_cli.sh | bash
 RUN curl -L https://foundry.paradigm.xyz | bash && /home/jovyan/.foundry/bin/foundryup
 ENV PATH="/home/jovyan/.foundry/bin:$PATH"
 
